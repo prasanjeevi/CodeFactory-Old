@@ -18,9 +18,10 @@ namespace Cli
           WriteLine($"| long | {long.MinValue} | {long.MaxValue} | {typeof(long)} |");
           WriteLine($"| ulong | {ulong.MinValue} | {ulong.MaxValue} | {typeof(ulong)} |");
           WriteLine($"| float | {float.MinValue} | {float.MaxValue} | {typeof(float)} |");
+          WriteLine($"| double | {double.MinValue} | {double.MaxValue} | {typeof(double)} |");
           WriteLine($"| decimal | {decimal.MinValue} | {decimal.MaxValue} | {typeof(decimal)} |");
-          PrintWithoutENotation(float.MinValue);
-          PrintWithoutENotation(float.MaxValue);
+          PrintWithoutENotation(float.MaxValue);;
+          PrintWithoutENotation(double.MaxValue);
       }
 
       internal void PrintWithoutENotation(object o)
