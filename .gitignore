@@ -1,2 +1,9 @@
 bin
 obj
+
+*.class
+.idea
+.gradle
+out
+
+.DS_Store
