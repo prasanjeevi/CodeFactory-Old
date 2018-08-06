@@ -1,0 +1,11 @@
+<p>
+  {{event.start | date}}
+</p>
+<ul>
+  <li *ngFor="let event of events">
+    <a *ngIf="event.url" target="_blank" rel="noopener" href="{{event.url}}">{{event.title | lowercase}}</a>
+    <span *ngIf="!event.url">{{event.title | lowercase}}</span>
+    <input [(ngModel)]="event.title" placeholder="name">
+  </li>
+</ul>
+<button (click)="onSave">Save</button>
