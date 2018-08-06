@@ -1,0 +1,16 @@
+#url{
+  width: 900px;
+}
+button {
+  width: 62px;
+}
+#browser {
+  width: 1024px;
+  height: 512px;
+  border: 1px dotted #c0c0c0;
+}
+#output {
+  width: 1024px;
+  height: 512px;
+  border: 1px dotted #d60093;
+}

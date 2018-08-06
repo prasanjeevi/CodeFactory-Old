@@ -1,0 +1,20 @@
+{
+  "name": "spa",
+  "version": "0.0.1",
+  "description": "pro code app",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasanjeevi/CodeFactory"
+  },
+  "scripts": {
+    "node": "node js/node/server.js",
+    "express": "node js/node/express/app.js",
+    "electron": "cd js/node/electron && npm start"
+  },
+  "dependencies": {
+    "html2canvas": "^1.0.0-alpha.12",
+    "jquery": "^3.3.1",
+    "prismjs": "^1.15.0"
+  }
+}

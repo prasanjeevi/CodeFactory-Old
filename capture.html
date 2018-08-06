@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/capture.css">
+  <script src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
+  <script>
+    function load() {
+      const url = document.getElementById('url').value;
+      document.getElementById('browser').src = url;
+    }
+    function capture() {
+      html2canvas(document.body).then(function(canvas) {
+          //document.body.appendChild(canvas);
+          let pngUrl = canvas.toDataURL();
+          document.getElementById("output").src = pngUrl;
+      });
+    }
+  </script>
+</head>
+<body>
+  <input type="url" id="url">
+  <button onclick="load()">Load</button>
+  <button onclick="capture()">Capture</button>
+  <iframe id="browser">Does not support</iframe>
+  <img id="output">
+</body>
+</html>

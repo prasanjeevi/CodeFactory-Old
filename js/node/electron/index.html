@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World!</title>
+    <meta name="description" content="Basic HTML5">
+    <meta name="author" content="Sanjeevi Mohan">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <style>
+      div {
+        width: 160px;
+        background: #745fb5;
+        color: white;
+        padding: 8px;
+        margin: 8px;
+        border-radius: 2px;
+        box-shadow: 0 1px 1px rgba(102,119,136,.55);
+        padding: 16px;
+      }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <p>Running with below configuration</p>
+    <p id="config"></p>
+    <a href="./components/github/index.html">GitHub Auth</a>
+    <div id="dotnet-serve">DotNet Serve</div>
+    <div id="print-pdf-web-page">Print Web Page</div>
+    <div id="show-env">Show Env</div>
+    <div id="db">DB</div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script src="../../core/index.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+    'use strict'
+    let config
+    
+    if (isNode) {
+      config = {
+        platform: process.platform,
+        arch: process.arch,
+        versions: process.versions
+      }
+    }
+    else {
+      config = {
+        platform: navigator.platform,
+        userAgent: navigator.userAgent
+      }
+    }
+    
+    document.getElementById('config').innerText = JSON.stringify(config, null, 2)
+    </script>
+  </body>
+</html>

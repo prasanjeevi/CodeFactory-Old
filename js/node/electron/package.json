@@ -1,0 +1,27 @@
+{
+  "name": "code-factory-electron",
+  "version": "0.0.1",
+  "description": "pro code electron app",
+  "main": "main.js",
+  "author": "Sanjeevi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasanjeevi/procode"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3"
+  },
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-rebuild": "^1.8.2"
+  },
+  "dependencies": {
+    "request": "^2.87.0",
+    "sqlite3": "^4.0.2"
+  }
+}

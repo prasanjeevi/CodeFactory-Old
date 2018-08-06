@@ -1,0 +1,60 @@
+[
+  {
+    "name": "person1",
+    "accounts": [
+      {
+        "bank": "H",
+        "balance": 4000.00,
+        "balanceAsOn": "2018-06-27",
+        "type": 0
+      },
+      {
+        "bank": "H",
+        "depositeAmt": 100000.00,
+        "depositeDate": "2018-06-27",
+        "maturityAmt": 100000.00,
+        "maturityDate": "2018-07-27",
+        "roi": 7.25,
+        "type": 1
+      },
+      {
+        "bank": "S",
+        "balance": 5000.00,
+        "balanceAsOn": "2018-06-27",
+        "type": 0
+      }
+    ]
+  },
+  {
+    "name": "person2",
+    "accounts": [
+      {
+        "bank": "CA",
+        "balance": 4000.00,
+        "balanceAsOn": "2018-06-27",
+        "type": 0
+      },
+      {
+        "bank": "CU",
+        "balance": 4000.00,
+        "balanceAsOn": "2018-06-27",
+        "type": 0
+      },
+      {
+        "bank": "CU",
+        "depositeAmt": 100000.00,
+        "depositeDate": "2018-06-27",
+        "maturityAmt": 100000.00,
+        "maturityDate": "2018-07-27",
+        "roi": 7.25,
+        "type": 1
+      },
+      {
+        "bank": "S",
+        "balance": 5000.00,
+        "balanceAsOn": "2018-06-27",
+        "type": 0
+      }
+    ]
+  }
+]

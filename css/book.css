@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url(../fonts/FiraSans-Regular.eot);
+  src: url(../fonts/FiraSans-Regular.eot) format('embedded-opentype'),
+       url(../fonts/FiraSans-Regular.woff) format('woff'),
+       url(../fonts/FiraSans-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url(../fonts/FiraSans-Bold.eot);
+  src: url(../fonts/FiraSans-Bold.eot) format('embedded-opentype'),
+       url(../fonts/FiraSans-Bold.woff) format('woff'),
+       url(../fonts/FiraSans-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  src: url(../fonts/FiraMono-Regular.eot);
+  src: url(../fonts/FiraMono-Regular.eot) format('embedded-opentype'),
+       url(../fonts/FiraMono-Regular.woff) format('woff'),
+       url(../fonts/FiraMono-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  src: url(../fonts/FiraMono-Bold.eot);
+  src: url(../fonts/FiraMono-Bold.eot) format('embedded-opentype'),
+       url(../fonts/FiraMono-Bold.woff) format('woff'),
+       url(../fonts/FiraMono-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+pre {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+  background: #E0EBF5 url(../img/pattern.png) repeat;
+  font-family: "Fira Sans", serif;
+  font-size: 15px;
+  color: #333;
+}
+
+.outer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FFF;
+  border: 1px solid #AAA;
+  border-top: none;
+  border-bottom: none;
+
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+@media (max-width: 715px) {
+  .outer-container {
+    border: none
+  }
+}
+
+.breadcrumbs {
+  padding: 8px 16px;
+  border-bottom: 1px solid #DDD;
+  background: #F3F3F3;
+  font-size: 13px;
+}
+
+.container {
+  padding: 20px;
+}
+.body {
+  flex: 1;
+}
+
+a, a:active, a:visited, a:link, a:hover {
+  color: #375EAB;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 18px;
+}
+h4, h5 {
+  font-size: 15px;
+}
+h2, h3, h4, h5 {
+  color: #000;
+  margin: 20px 0 12px 0;
+}
+
+p {
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+pre, code, .code {
+  font-family: "Fira Mono", monospace !important;
+  font-size: 15px;
+}
+/*
+pre, code {
+  background: #F3F3F3;
+  border: 1px solid #E3E3E3;
+}
+pre {
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  line-height: 18px;
+}
+code {
+  border-radius: 3px;
+  padding: 1px 2px;
+  white-space: nowrap;
+} */
+
+.book table {
+  margin-bottom: 16px;
+}
+.book td {
+  border: 1px solid #E3E3E3;
+  padding: 4px 8px;
+  background: #FAFAFA;
+  text-align: center;
+}
+
+.book .paging {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin-top: 16px;
+}
+.book .paging td {
+  text-align: center;
+  padding: 8px 0 0;
+  border: none;
+  background: transparent;
+}
+.book .paging .prev, .book .paging .next {
+  width: 100px;
+}
+.book .paging .prev {
+  text-align: left;
+}
+.book .paging .next {
+  text-align: right;
+}
+
+.footer {
+  padding: 4px 16px;
+  border-top: 1px solid #DDD;
+  background: #F3F3F3;
+  font-size: 8px;
+}
+
+.cover-image {
+  float: left;
+  margin-right: 16px;
+  margin-top: 4px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.25)
+}
+
+.book-list {
+  padding-bottom: 24px
+}
+
+.book-list dt {
+  font-size: 20px
+}
+
+dl dd {
+  padding: 8px 0;
+  margin: 0
+}
+/* 
+.clearfix:after,.clearfix:before {
+  display: table
+} */
+
+.clearfix {
+  clear: both
+}
+
+
+img.autoscale {
+  max-width: calc(100% - 32px);
+  border-radius: 8px;
+  display: block;
+  border: 1px solid #333;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,.25);
+  margin: 32px auto
+}
+
+img.block {
+  display: block;
+  margin: 16px auto
+}

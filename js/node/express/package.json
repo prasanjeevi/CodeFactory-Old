@@ -1,0 +1,16 @@
+{
+  "name": "procodeexpress",
+  "version": "0.0.1",
+  "description": "procode express app",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasanjeevi/procode"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

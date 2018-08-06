@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script>
+    $().ready(()=>{
+      $('#balance-on').val(new Date())
+      $.ajax({url:'https://localhost:5001/api/accounts/balance'}).done(data => $('#total-balance').text(data));
+      $('#save').click(()=>{
+        var data = {
+          balance: $('#balance').val(),
+          balanceOn: $('#balance-on').val()
+        };
+        console.log(data);
+        console.log(JSON.stringify(data));
+        $.ajax({url:'https://localhost:5001/api/accounts', type:'POST',dataType: 'json',
+            contentType: 'application/json', data: JSON.stringify(data)}).done(alert('saved'));
+        return false;
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="total-balance"></div>
+  <form action="">
+    <input type="number" id="balance">
+    <input type="date" id="balance-on">
+    <button type="submit" id="save">Save</button>
+  </form>
+</body>
+</html>

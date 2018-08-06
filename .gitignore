@@ -11,3 +11,5 @@ c/Program
 cpp/Program
 CodeBaseDotNet/Core/Web/Api/account.db
 CodeBasePython/output.txt
+
+node_modules
