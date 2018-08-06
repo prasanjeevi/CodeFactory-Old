@@ -1,5 +1,5 @@
 | Name | MinValue | MaxValue | Type |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | sbyte | -128 | 127 | System.SByte |
 | byte | 0 | 255 | System.Byte |
 | short | -32768 | 32767 | System.Int16 |

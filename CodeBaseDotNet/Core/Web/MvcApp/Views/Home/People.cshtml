@@ -1,0 +1,12 @@
+@model IEnumerable<MvcApp.Models.Person>
+
+<h2>People</h2>
+<h3>List</h3>
+<ul>
+    @foreach (var item in Model)
+    {
+    <li>
+        <a asp-action="Person" asp-route-id="@item.Id">@item.Name</a>
+    </li>
+    }
+</ul>

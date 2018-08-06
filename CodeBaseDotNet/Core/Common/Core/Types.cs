@@ -10,7 +10,7 @@ namespace Common.Core
       StringBuilder sb = new StringBuilder();
       // Numeric
       sb.AppendLine("| Name | MinValue | MaxValue | Type |");
-      sb.AppendLine("| --- | --- | --- | --- |");
+      sb.AppendLine("|---|---|---|---|");
       sb.AppendLine($"| sbyte | {sbyte.MinValue} | {sbyte.MaxValue} | {typeof(sbyte)} |");
       sb.AppendLine($"| byte | {byte.MinValue} | {byte.MaxValue} | {typeof(byte)} |");
       sb.AppendLine($"| short | {short.MinValue} | {short.MaxValue} | {typeof(short)} |");

@@ -30,6 +30,9 @@ namespace Cli
           case "cultures":
             System.IO.File.WriteAllText("../docs/cultures.md", Cultures.Print());
             break;
+          case "date-format":
+            System.IO.File.WriteAllText("../docs/date-format.md", DateFormat.Print());
+            break;
           case "inr":
             WriteLine(Cultures.FormatToIndianCurrency(29531.96M));
             WriteLine(Cultures.FormatToIndianCurrency(446517.7099M));

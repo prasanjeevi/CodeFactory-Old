@@ -68,11 +68,6 @@ namespace Api.Controllers
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] Account account)
     {
-      using(var db = new AccountDbContext())
-      {
-        db.Accounts.(account);
-        db.SaveChanges();
-      }
     }
 
     // DELETE api/values/5

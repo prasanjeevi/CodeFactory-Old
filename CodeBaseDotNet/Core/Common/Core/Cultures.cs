@@ -10,6 +10,7 @@ namespace Common.Core
       int i = 1;
       StringBuilder sb = new StringBuilder();
       sb.AppendLine("| # | English Name | Name |");
+      sb.AppendLine("|---|---|---|");
       foreach(var ci in CultureInfo.GetCultures(CultureTypes.AllCultures&~CultureTypes.NeutralCultures))
       {
         sb.AppendLine($"| {i++} | {ci.EnglishName} | {ci.Name} |");

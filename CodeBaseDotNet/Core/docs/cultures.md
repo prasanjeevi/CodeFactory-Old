@@ -1,4 +1,5 @@
 | # | English Name | Name |
+|---|---|---|
 | 1 | Afrikaans (Namibia) | af-NA |
 | 2 | Afrikaans (South Africa) | af-ZA |
 | 3 | Aghem (Cameroon) | agq-CM |
