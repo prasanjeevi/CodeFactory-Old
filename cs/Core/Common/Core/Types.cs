@@ -32,6 +32,7 @@ namespace Common.Core
       sb.AppendLine("| dynamic |  |  |  |");
       sb.AppendLine();
       sb.AppendLine(PrintWithoutENotation(float.MaxValue));
+      sb.AppendLine();
       sb.AppendLine(PrintWithoutENotation(double.MaxValue));
 
       return sb.ToString();
