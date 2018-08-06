@@ -30,7 +30,7 @@ namespace Common.Core
       sb.AppendLine($"| string |  |  | {typeof(string)} |");
       sb.AppendLine($"| object |  |  | {typeof(object)} |");
       sb.AppendLine("| dynamic |  |  |  |");
-
+      sb.AppendLine();
       sb.AppendLine(PrintWithoutENotation(float.MaxValue));
       sb.AppendLine(PrintWithoutENotation(double.MaxValue));
 
