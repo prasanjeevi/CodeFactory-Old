@@ -270,3 +270,213 @@ Quality coding.
 Enthusiasm over exploring new technologies with research oriented mind.
 Knowledge sharing and helping the team.
 Ownership and responsibility on tasks.
+
+FP Benefits
+	Greater predictability
+	Easier extensibility
+	Improved testing
+
+
+OO - encapsulating moving parts
+FP - minimising moving parts
+
+
+Tamed side effects
+Expressions v statements
+Functions as data
+
+Higher order function 
+---
+p-redis
+p-config-server
+
+Typically, applications using databases need to be converted to receive their connection strings from the environment
+
+(?:10|172|192)(?:\.\d{1,3}){3}
+
+---
+[ComImport]
+System.Reflection.ProcessorArchitecture. MSIL
+Microsoft.Win32
+---
+ng new my-sassy-app --style=scss
+<a target="_blank" rel="noopener"
+noreferrer
+<img src="data:image/svg+xml;base64,
+
+--- 
+argparse
+docopt
+Shebang #!/usr/bin/env python3
+
+* class types 
+* struct types 
+* array types 
+* enum types 
+* delegate types 
+* interface types
+---
+Record
+
+https://channel9.msdn.com/Shows/5-Things/Episode-8-Five-Things-About-Visual-Studio-Code/
+https://channel9.msdn.com/Shows/5-Things/Episode-9-Five-Things-About-Webpack
+---
+Folders
+Properties/
+App_Data
+lib/
+.nuget
+_bin_deployableAssemblies
+
+Files
+MicrosoftAjax
+MicrosoftMvcAjax
+MicrosoftMvcValidation
+
+
+ArrayList<String> arrList = new ArrayList<>(
+        Arrays.asList(“One”,”Two”,”Three”));
+
+
+boolean matched = Arrays.stream(arrList).parallel().anyMatch(strWord::contains);
+—
+1. Integrated windows authentication is not supported in PCF
+
+Integrated Security=False
+Integrated Security = true;
+ Integrated Security = SSPI;
+
+Trusted_Connection = yes;
+Trusted_Connection=False;
+
+When false, User ID and Password are specified in the connection. When true, the current Windows account credentials are used for authentication.
+Recognized values are true, false, yes, no, and sspi (strongly recommended), which is equivalent to true.
+—
+ASP.NET 4.x 
+
+
+manifest.yml
+---
+applications:
+- name: REPLACE_ME
+  memory: 2G
+  stack: windows2012R2
+  buildpack: hwc_buildpack
+
+Web.config
+* Don’t use Windows integrated auth, it’s been disabled in PCF.
+* Don’t use HTTP modules that don’t ship with .NET or can’t be deployed in your app’s bin directory, for example the Microsoft URL Rewrite module.
+* SQL Server connection strings must use fully qualified domain names.
+
+
+AD 
+ .NET applications cannot use integrated authentication even if you were to domain join the cell. The hostable web core provided by Cloud Foundry explicitly disallows Windows auth even if it’s been “enabled” in the application’s web.config.
+
+SQL SERVER DB MIGRATION TO AZURE
+
+Biztalk as a stateful COTS software package isn’t a good fit to host on Pivotal Cloud Foundry. Potentially in the future this would make a good candidate for Pivotal Container Service.
+
+Sharepoint as a stateful COTS software package that tightly integrates with Active Directory isn’t a good fit to host on Pivotal Cloud Foundry. Potentially in the future this would make a good candidate for Pivotal Container Service.
+
+Console applications can be hosted from PCF using the binary buildpack
+
+
+DB2
+* Application should be targeting .NET framework 4.5.+ (4.0 apps should be recompiled)
+* Application should use “x64” CPU as a platform
+* Copy C++ runtime redist dlls to driver ‘bin’ directory. (PCF windows cells do not have C++ runtime dlls installed). Required dll’s could be found in installed nuget package
+Build the application and copy msvcp120.dll
+    msvcr120.dll two dlls under application bin\clidriver\bin
+* The full connection string may be provided in the application configuration
+* 
+<connectionStrings>
+<add name="DBContext" connectionString="DATABASE=Databasename;SERVER=servername:port;UID=Userid;PWD=password;CurrentSchema=myschemaproviderName="IBM.Data.DB2"/>
+</connectionStrings>
+
+If SERVER is not present in the connection string, driver assumes that ‘DATABASE’ is the name of the alias and will try to resolve it in db2dsdriver.cfg.
+
+IBMQ > 8
+MQTT (MQ Telemetry Transport)
+
+Machine keys help protect Forms authentication cookie data and page-level view state data. They also verify out-of-process session state identification. 
+
+The MSVCRT.dll is the C standard library and the MSVCP*.dll is the C++ standard library for programs compiled with the Microsoft C++ compiler. Most unmanaged Windows programs and libraries make use of these DLLs and expect the specific version they’re linked against to be installed on the Windows system.
+
+After nuget installing the SQLite driver, you’ll need to copy the bin\x64\SQLite.Interop.dll to the parent folder bin\SQLite.Interop.dll.
+Gemfire
+
+The .NET Gemfire driver is a wrapper around the C++ driver for Windows, so you’ll need ensure you put the appropriate MSVCR*.dlls in the ASP.NET application’s bin directory. This help topic may be relevant?
+
+
+The DSN can be avoided by providing a DRIVER= keyword rather than DSN= in the connection string.
+Driver={IBM DB2 ODBC DRIVER};Database=myDataBase;Hostname=myServerAddress;Port=1234;Protocol=TCPIP;Uid=myUsername;Pwd=m
+
+
+ODP.NET
+Oracle.DataAccess -> Oracle.ManagedDataAccess
+
+Under no circumstances should your application code ever spawn a child process while running in the cloud. - PCF 1.9 Tasks Feature,
+
+
+Batch processes and scheduled activity are both things that require individual attention and need to be re-architected and designed to take advantage of the cloud and to be designed in a 12-factor/cloud native fashion.
+
+
+X509Store( StoreLocation.CurrentUser);
+
+
+Windows Services are not supported 
+
+WF are not supported like MSMQ and MSTDC 
+
+
+HttpSelfHostServer
+
+The largest noticeable difference in .NET Core is that there is no DataSets, DataTables, or DataAdapters
+
+ApplicationException
+[Serializable]
+ISerializable
+
+Dapper
+
+* Windows auth is not supported.
+* X509 certificates cannot be stored in the Windows cert store.
+* SSL offload/load balancing sometimes require custom WCF behaviors.
+* Not all transports are supported.
+* Self hosted WCF services (e.g. hosted outside IIS).
+Other more esoteric transports like MSMQ and named pipes are not supported within Cloud Foundry.
+
+
+self hosted WCF apps are not supported within Cloud Foundry, although it’s possible that the TCP transport will work within Cloud Foundry - however that’s not been verified.
+
+
+Microsoft.Win32;
+—
+KerberosToken
+https://msdn.microsoft.com/en-in/library/microsoft.web.services3.security.tokens.kerberostoken.aspx
+
+
+kerberosSecurity
+https://www.codeproject.com/Articles/27554/Authentication-in-web-services-using-C-and-Kerbero
+
+
+NetworkCredential
+https://msdn.microsoft.com/en-us/library/system.net.networkcredential(v=vs.110).aspx
+
+
+CredentialCache
+https://msdn.microsoft.com/en-us/library/system.net.credentialcache(v=vs.110).aspx
+CredentialCache.DefaultNetworkCredentials CredentialCache.DefaultCredentials
+
+
+NTLM
+Negotiate
+
+
+Impersonation
+
+
+.user
+Migrations
+Properties
+.suo
