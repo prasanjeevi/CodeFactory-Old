@@ -10,7 +10,8 @@
   "scripts": {
     "node": "node js/node/server.js",
     "express": "node js/node/express/app.js",
-    "electron": "cd js/node/electron && npm start"
+    "electron": "cd js/node/electron && npm start",
+    "build": "webpack --display-modules"
   },
   "dependencies": {
     "html2canvas": "^1.0.0-alpha.12",
@@ -18,6 +19,16 @@
     "jquery-tageditor": "^1.0.1",
     "jquery-ui-dist": "^1.12.1",
     "prismjs": "^1.15.0",
-    "simplemde": "^1.11.2"
+    "simplemde": "^1.11.2",
+    "bootstrap": "^4.1.3",
+    "material-components-web": "^0.38.1",
+    "material-design-icons": "^3.0.1",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }

@@ -1,0 +1,45 @@
+.red-border{color: rgb(237, 117, 105)}
+.red{color: rgb(247, 223, 221)}
+.green-border{color: rgb(52, 175, 149)}
+.green{color: rgb(210, 235, 230)}
+.blue-border{color: rgb(80, 163, 231)}
+.blue{color: rgb(216, 233, 246)}
+.rose-border{color: rgb(236, 137, 220)}
+.rose{color: rgb(247, 227, 244)}
+.yellow-border{color: rgb(251, 210, 107)}
+.yellow{color: rgb(250, 240, 214)}
+.teal-border{color: rgb(108, 214, 230)}
+.teal{color: rgb(222, 243, 246)}
+.violet-border{color: rgb(146, 138, 255)}
+.violet{color: rgb(229, 228, 251)}
+.grey-border{color: rgb(126, 126, 226)}
+.grey{color: rgb(250, 250, 250)}
+
+
+.red-stroke{stroke: rgb(237, 117, 105)}
+.red-fill{fill: rgb(247, 223, 221)}
+
+.green-stroke{stroke: rgb(52, 175, 149)}
+.green-fill{fill: rgb(210, 235, 230)}
+
+.blue-stroke{stroke: rgb(80, 163, 231)}
+.blue-fill{fill: rgb(216, 233, 246)}
+
+.rose-stroke{stroke: rgb(236, 137, 220)}
+.rose-fill{fill: rgb(247, 227, 244)}
+
+.yellow-stroke{stroke: rgb(251, 210, 107)}
+.yellow-fill{fill: rgb(250, 240, 214)}
+
+.teal-stroke{stroke: rgb(108, 214, 230)}
+.teal-fill{fill: rgb(222, 243, 246)}
+
+.violet-stroke{stroke: rgb(146, 138, 255)}
+.violet-fill{fill: rgb(229, 228, 251)}
+
+.grey-stroke{stroke: rgb(126, 126, 226)}
+.grey-fill{fill: rgb(250, 250, 250)}
+
+.teal2{
+color: rgb(2, 153,172)
+}

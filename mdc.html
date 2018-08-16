@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CF</title>
+  <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="node_modules/material-design-icons/iconfont/material-icons.css">
+</head>
+
+<body>
+  <div class="container" style="margin-top: 16px">
+    <!-- <div class="mdc-card" style="width: 20rem">
+      <div class="mdc-card__media mdc-card__media--square" style="background-image: url(img/card.jpg);">
+        <div class="mdc-card__media-content">Title</div>
+      </div>
+      Hello
+      <div class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+          <button class="mdc-button mdc-card__action mdc-card__action--button">Action 1</button>
+          <button class="mdc-button mdc-card__action mdc-card__action--button">Action 2</button>
+        </div>
+        <div class="mdc-card__action-icons">
+          <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
+          <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+        </div>
+      </div>
+    </div> -->
+
+
+    <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple">Like</button>
+    <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple"><i class="material-icons mdc-button__icon">favorite</i>Like</button>
+    
+  </div>
+  <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <!-- <script>mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-button'))</script> -->
+  <script>mdc.autoInit()</script>
+</body>
+
+</html>
